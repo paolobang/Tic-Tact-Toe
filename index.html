@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>React Tik Tak Toe</title>
+    <style>
+        button {
+          background-color: #0c80f3;
+          border: 6px solid #0ff166;
+          border-radius: 10px;
+        }
+        .game-board {
+          width: 600px;
+          height: 600px;
+          margin: 0 auto;
+          background-color: #34495e;
+          color: rgb(204, 28, 28);
+          border: 6px solid #0b0d0f;
+          border-radius: 10px;
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 1fr;
+        }
+  
+        .grid-row {
+          border: 6px solid #739dc7;
+          border-radius: 6px;
+          font-family: Helvetica;
+          font-weight: bold;
+          font-size: 4em;
+          display: grid;
+          grid-template-rows: 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+          background-color: rgb(175, 70, 70);
+        }
+        .block {
+          background-color: rgb(219, 28, 28);
+          border: 6px solid green;
+          border-radius: 6px;
+          font-family: Helvetica;
+          font-weight: bold;
+          font-size: 20em;
+        }
+        .white {
+          color: white;
+        }
+        .red {
+          color: red
+        }
+      </style>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <h1>React Tik Tak Toe</h1>
+
+    <!-- -->
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="App.jsx" defer type="text/babel"></script>
+    
+</body>
+</html>
